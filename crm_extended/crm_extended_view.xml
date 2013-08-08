@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <record id="view_crm_extended_partners_form_inherited" model="ir.ui.view">
+                <field name="name">view.crm.extended.res.partner.form.crm.inherited</field>
+                <field name="model">res.partner</field>
+                <field name="inherit_id" ref="base.view_partner_form"/>
+                <field eval="18" name="priority"/>
+                <field name="arch" type="xml">
+                    <field name="title" position="after">
+                        <field name="interested" />
+                        <field name="activities" />
+                        <field name="birth_date" />
+                    </field>
+                </field>
+        </record>
+ 
+        <record id="view_crm_extended_crm_lead_form_inherited" model="ir.ui.view">
+                <field name="name">view.crm.extended.crm.lead.form.crm.inherited</field>
+                <field name="model">crm.lead</field>
+                <field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+                <field eval="18" name="priority"/>
+                <field name="arch" type="xml">
+                    <field name="fax" position="after">
+                        <field name="interested" />
+                        <field name="activities" />
+                        <field name="birth_date" />
+                    </field>
+                    <field name="stage_id" position="before">
+                        <button name="action_crm_lead_send_mail" string="Send by Email" type="object" class="oe_highlight"/>
+                    </field>
+                    <field name="categ_ids" position="after">
+                            <field name="product_ids" widget="many2many_tags"/>
+                    </field> 
+                </field>
+        </record>
+        
+    </data>
+</openerp>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        
+    <record model="ir.ui.view" id="sale_cost_sale_order_line_form">
+        <field name="name">sale.order.line.tree.margin.view.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+           <xpath expr="//field[@name='order_line']/form//field[@name='price_unit']" position="after">
+                <field name="fabrication"/>
+                <field name="fabrication_cost" attrs="{'invisible': [('fabrication','=','without_fabrication_labour')]}"/>
+                <field name="installation"/>
+                <field name="installation_cost" attrs="{'invisible': [('installation','=','without_installation')]}"/>
+           </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="purchase_cost_purchase_order_form_inherit">
+        <field name="name">purchase.order.form.inherit</field>
+        <field name="model">purchase.order.line</field>
+        <field name="inherit_id" ref="purchase.purchase_order_line_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='price_unit']" position="after">
+                <field name="fabrication"/>
+                <field name="fabrication_cost" attrs="{'invisible': [('fabrication','=','without_fabrication_labour')]}"/>
+                <field name="installation"/>
+                <field name="installation_cost" attrs="{'invisible': [('installation','=','without_installation')]}"/>
+            </xpath>
+        </field>
+    </record>
+
+    
+    <!--record id="view_order_form_editable_list" model="ir.ui.view">
+            <field name="name">sale.order.form.editable.list</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="groups_id" eval="[(6, 0, [])]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/tree" position="attributes">
+                    <attribute name="editable"/>
+                </xpath>
+            </field>
+        </record>
+        
+    <record id="view_purchase_order_form_editable_list" model="ir.ui.view">
+        <field name="name">purchase.order.form.editable.list</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="groups_id" eval="[(6, 0, [])]"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree" position="attributes">
+                <attribute name="editable"/>
+            </xpath>
+        </field>
+    </record-->
+    
+    </data>
+</openerp>
