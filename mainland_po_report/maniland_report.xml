@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report auto="False" 
+                id="report_maniland_po_report" 
+                model="purchase.order" 
+                name="maniland.po.report"
+                rml="mainland_po_report/report/mainland_po_report.rml" 
+                string="Mainland / Purchase Order"
+                usage="default"/>
+
+    </data>
+</openerp>

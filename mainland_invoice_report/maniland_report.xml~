@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report auto="False" 
+                id="report_maniland_invoice_report" 
+                model="account.invoice" 
+                name="maniland.invoice.report"
+                rml="mainland_invoice_report/report/mainland_invoice_report.rml" 
+                string="Mainland / Invoice"
+                usage="default"/>
+
+    </data>
+</openerp>
