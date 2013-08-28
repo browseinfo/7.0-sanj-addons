@@ -20,7 +20,7 @@
 #
 ##############################################################################
 from openerp.osv import osv, fields
-from twisted.application.strports import _DEFAULT
+#from twisted.application.strports import _DEFAULT
 import openerp.addons.decimal_precision as dp
 
 class sale_order_line(osv.osv):

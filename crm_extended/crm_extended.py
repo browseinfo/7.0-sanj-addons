@@ -21,7 +21,7 @@
 ##############################################################################
 
 from openerp.osv import osv, fields
-from twisted.application.strports import _DEFAULT
+#from twisted.application.strports import _DEFAULT
 
 class res_partner(osv.osv):
     _inherit = 'res.partner'
