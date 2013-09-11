@@ -29,6 +29,7 @@
     'depends': ['account'],
     'data': [
             'maniland_report.xml',
+            'mainland_invoice_view.xml',
             ],
     'demo': [],
     'test': [],

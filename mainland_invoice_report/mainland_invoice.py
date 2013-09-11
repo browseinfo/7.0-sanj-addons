@@ -19,8 +19,18 @@
 #
 ##############################################################################
 
-import mainland_invoice
-import report
+from openerp.osv import fields, osv
+
+
+class account_invoice(osv.osv):
+    _inherit = 'account.invoice'
+    _columns = {
+        'date_order':fields.date('Order Date',select=True, help="Date on which this document has been created."),
+    }
+    _defaults = {
+        'date_order': fields.date.context_today,
+        }
+account_invoice()
+
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
-

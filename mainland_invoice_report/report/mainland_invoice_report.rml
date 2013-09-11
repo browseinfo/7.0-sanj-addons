@@ -1133,7 +1133,7 @@ AAAASUVORK5CYII=
           <para style="P5">Date</para>
         </td>
         <td>
-          <para style="P7">[[formatLang(o.date_invoice,date=True) ]]</para>
+          <para style="P7">[[ formatLang(o.date_order,date=True) ]]</para>
         </td>
         <td>
           <para style="P14">Terms of Payment</para>
