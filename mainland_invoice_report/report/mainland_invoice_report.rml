@@ -115,26 +115,44 @@
       <lineStyle kind="LINEABOVE" colorName="#000000" start="1,2" stop="1,2"/>
       <lineStyle kind="LINEABOVE" colorName="#000000" start="2,2" stop="2,2"/>
     </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <blockBackground colorName="#99ccff" start="0,0" stop="0,-1"/>
+      <blockBackground colorName="#99ccff" start="0,1" stop="0,-1"/>
+    </blockTableStyle>
     <initialize>
       <paraStyle name="all" alignment="justify"/>
     </initialize>
     <paraStyle name="P1" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT"/>
     <paraStyle name="P2" fontName="Helvetica" fontSize="9.0" leading="11" alignment="RIGHT"/>
-    <paraStyle name="P3" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT"/>
-    <paraStyle name="P4" fontName="Helvetica-Bold" fontSize="11.0" leading="14" alignment="CENTER"/>
-    <paraStyle name="P5" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
-    <paraStyle name="P6" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="P3" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="P6" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="P7" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P8" fontName="Helvetica-Bold" fontSize="16.0" leading="20" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P9" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P10" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P8" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P10" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="P11" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P12" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P13" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P14" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P15" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P16" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
-    <paraStyle name="P17" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P12" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P13" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P14" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P15" fontName="Helvetica-Bold" fontSize="16.0" leading="20" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="Standard" fontName="Helvetica"/>
     <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
     <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
@@ -1036,9 +1054,7 @@ AAAASUVORK5CYII=
     <blockTable colWidths="535.0" style="Table2">
       <tr>
         <td>
-          <para style="P8">
-            <font face="Helvetica">INVOICE</font>
-          </para>
+          <para style="P15">INVOICE</para>
         </td>
       </tr>
     </blockTable>
@@ -1075,7 +1091,7 @@ AAAASUVORK5CYII=
     <blockTable colWidths="134.0,265.0,33.0,103.0" style="Table4">
       <tr>
         <td>
-          <para style="P9">[[ (o.number) or '' ]] </para>
+          <para style="P8">[[ (o.number) or '' ]] </para>
         </td>
         <td>
           <para style="P2">
@@ -1094,59 +1110,59 @@ AAAASUVORK5CYII=
         </td>
       </tr>
     </blockTable>
-    <para style="P11">
+    <para style="P12">
       <font color="white"> </font>
     </para>
     <blockTable colWidths="67.0,114.0,53.0,113.0,68.0,120.0" style="Table6">
       <tr>
         <td>
-          <para style="P5">Buyer</para>
+          <para style="P3">Buyer</para>
         </td>
         <td>
-          <para style="P12">[[ (o.partner_id and o.partner_id.name) or '' ]] </para>
+          <para style="P9">[[ (o.partner_id and o.partner_id.name) or '' ]] </para>
         </td>
         <td>
-          <para style="P5">Invoice</para>
-          <para style="P5">Number</para>
+          <para style="P3">Invoice</para>
+          <para style="P3">Number</para>
         </td>
         <td>
-          <para style="P17">
+          <para style="P4">
             <font color="white"> </font>
           </para>
-          <para style="P15">[[ o.number or '' ]]</para>
+          <para style="P7">[[ o.number or '' ]]</para>
         </td>
         <td>
-          <para style="P5">Purchase Order</para>
+          <para style="P3">Purchase Order</para>
         </td>
         <td>
-          <para style="P15">[[ o.origin or '' ]]</para>
+          <para style="P7">[[ o.origin or '' ]]</para>
         </td>
       </tr>
       <tr>
         <td>
-          <para style="P5">Shipping Address</para>
+          <para style="P3">Shipping Address</para>
         </td>
         <td>
-          <para style="P13">[[ o.partner_id and display_address(o.partner_id) ]]</para>
+          <para style="P10">[[ o.partner_id and display_address(o.partner_id) ]]</para>
         </td>
         <td>
-          <para style="P5">Date</para>
+          <para style="P3">Date</para>
         </td>
         <td>
-          <para style="P7">[[ formatLang(o.date_order,date=True) ]]</para>
+          <para style="P6">[[formatLang(o.date_order,date=True) ]]</para>
         </td>
         <td>
-          <para style="P14">Terms of Payment</para>
+          <para style="P11">Terms of Payment</para>
         </td>
         <td>
-          <para style="P13">[[ (o.payment_term_id and o.payment_term_id.name) or '' ]] </para>
+          <para style="P10">[[ (o.payment_term and o.payment_term.name) or '' ]] </para>
         </td>
       </tr>
     </blockTable>
     <para style="terp_default_9">
       <font color="white"> </font>
     </para>
-    <blockTable colWidths="50.0,264.0,80.0,50.0,40.0,50.0" repeatRows="1" style="Table1">
+    <blockTable colWidths="50.0,257.0,53.0,55.0,56.0,64.0" repeatRows="1" style="Table1">
       <tr>
         <td>
           <para style="terp_tblheader_Details">Product Code</para>
@@ -1155,10 +1171,10 @@ AAAASUVORK5CYII=
           <para style="terp_tblheader_Details">Item Description</para>
         </td>
         <td>
-          <para style="P6">Unit</para>
+          <para style="P5">Unit</para>
         </td>
         <td>
-          <para style="P6">Total Fq St</para>
+          <para style="P5">Total Fq St</para>
         </td>
         <td>
           <para style="terp_tblheader_Details_Right">Price Per Unit</para>
@@ -1170,7 +1186,7 @@ AAAASUVORK5CYII=
     </blockTable>
     <section>
       <para style="terp_default_8">[[repeatIn(o.invoice_line,'line')]]</para>
-      <blockTable colWidths="48.0,265.0,80.0,50.0,40.0,50.0" style="Table7">
+      <blockTable colWidths="48.0,258.0,53.0,56.0,55.0,63.0" style="Table7">
         <tr>
           <td>
             <para style="terp_default_Right_9">[[ line.product_id.default_code ]]</para>
@@ -1185,10 +1201,10 @@ AAAASUVORK5CYII=
             <para style="terp_default_Right_9">[[ formatLang(line.quantity ) ]] </para>
           </td>
           <td>
-            <para style="terp_default_Right_9">[[ formatLang(line.price_unit, digits=get_digits(dp='Account') ) ]]</para>
+            <para style="terp_default_Right_9">[[ formatLang(line.price_unit, digits=get_digits(dp='Account'), currency_obj=o.currency_id) ]]</para>
           </td>
           <td>
-            <para style="terp_default_Right_9">[[ formatLang(line.price_subtotal, digits=get_digits(dp='Account') ) ]] [[ o.pricelist_id.currency_id.symbol ]]</para>
+            <para style="terp_default_Right_9">[[ formatLang(line.price_subtotal, digits=get_digits(dp='Account'), currency_obj=o.currency_id ) ]] </para>
           </td>
         </tr>
         <tr>
@@ -1234,7 +1250,7 @@ AAAASUVORK5CYII=
           <para style="terp_default_9">Sub Total :</para>
         </td>
         <td>
-          <para style="terp_default_Right_9">[[ formatLang(o.amount_untaxed, digits=get_digits(dp='Account') ) ]] [[ o.pricelist_id.currency_id. symbol ]]</para>
+          <para style="terp_default_Right_9">[[ formatLang(o.amount_untaxed, digits=get_digits(dp='Account'), currency_obj=o.currency_id ) ]] </para>
         </td>
       </tr>
       <tr>
@@ -1247,7 +1263,7 @@ AAAASUVORK5CYII=
           <para style="terp_default_9">Taxes :</para>
         </td>
         <td>
-          <para style="terp_default_Right_9">[[ formatLang(o.amount_tax, digits=get_digits(dp='Account')) ]] [[ o.pricelist_id.currency_id. symbol ]]</para>
+          <para style="terp_default_Right_9">[[ formatLang(o.amount_tax, digits=get_digits(dp='Account'), currency_obj=o.currency_id) ]]</para>
         </td>
       </tr>
       <tr>
@@ -1260,7 +1276,32 @@ AAAASUVORK5CYII=
           <para style="terp_default_Bold_9">Total :</para>
         </td>
         <td>
-          <para style="terp_default_Bold_9_Right">[[ formatLang(o.amount_total, digits=get_digits(dp='Account') ) ]] [[ o.pricelist_id.currency_id. symbol ]]</para>
+          <para style="terp_default_Bold_9_Right">[[ formatLang(o.amount_total, digits=get_digits(dp='Account') , currency_obj=o.currency_id) ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_8">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="187.0,348.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P3">Standard Terms &amp; Conditions</para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P3">Comments</para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
         </td>
       </tr>
     </blockTable>

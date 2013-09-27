@@ -8,7 +8,7 @@
             <field name="inherit_id" ref="account.invoice_form"/>
             <field name="arch" type="xml">
                  <xpath expr="//field[@name='date_invoice']" position="after">
-                   <field name="date_order"  invisible="1" />
+                   <field name="date_order" required="1"/>
                  </xpath>
             </field>
         </record>
