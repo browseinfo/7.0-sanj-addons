@@ -29,7 +29,7 @@ class account_invoice(osv.osv):
     }
     _defaults = {
         'date_order': fields.date.context_today,
-        'date': fields.date.context_today,
+        'date_invoice': fields.date.context_today,
         }
 account_invoice()
 
