@@ -149,10 +149,8 @@
     <paraStyle name="P9" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="P10" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="P11" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P12" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
-    <paraStyle name="P13" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT"/>
-    <paraStyle name="P14" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
-    <paraStyle name="P15" fontName="Helvetica-Bold" fontSize="16.0" leading="20" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P12" fontName="Helvetica-Bold" fontSize="16.0" leading="20" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P13" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="Standard" fontName="Helvetica"/>
     <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
     <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
@@ -1054,7 +1052,7 @@ AAAASUVORK5CYII=
     <blockTable colWidths="535.0" style="Table2">
       <tr>
         <td>
-          <para style="P15">INVOICE</para>
+          <para style="P12">INVOICE</para>
         </td>
       </tr>
     </blockTable>
@@ -1110,7 +1108,7 @@ AAAASUVORK5CYII=
         </td>
       </tr>
     </blockTable>
-    <para style="P12">
+    <para style="P13">
       <font color="white"> </font>
     </para>
     <blockTable colWidths="67.0,114.0,53.0,113.0,68.0,120.0" style="Table6">
@@ -1299,9 +1297,7 @@ AAAASUVORK5CYII=
           <para style="P3">Comments</para>
         </td>
         <td>
-          <para style="P1">
-            <font color="white"> </font>
-          </para>
+          <para style="P1">[[(o.comment)]]</para>
         </td>
       </tr>
     </blockTable>
