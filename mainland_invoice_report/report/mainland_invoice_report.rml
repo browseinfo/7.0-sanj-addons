@@ -67,12 +67,28 @@
       <lineStyle kind="LINEAFTER" colorName="#c0c0c0" start="5,1" stop="5,-1"/>
       <lineStyle kind="LINEABOVE" colorName="#c0c0c0" start="5,1" stop="5,1"/>
       <lineStyle kind="LINEBELOW" colorName="#c0c0c0" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#c0c0c0" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#c0c0c0" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#c0c0c0" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#c0c0c0" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#c0c0c0" start="2,2" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#c0c0c0" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#c0c0c0" start="3,2" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#c0c0c0" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#c0c0c0" start="4,2" stop="4,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#c0c0c0" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#c0c0c0" start="5,2" stop="5,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#c0c0c0" start="5,2" stop="5,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#c0c0c0" start="5,-1" stop="5,-1"/>
       <blockBackground colorName="#99ccff" start="0,0" stop="0,-1"/>
       <blockBackground colorName="#99ccff" start="2,0" stop="2,-1"/>
       <blockBackground colorName="#99ccff" start="4,0" stop="4,-1"/>
       <blockBackground colorName="#99ccff" start="0,1" stop="0,-1"/>
       <blockBackground colorName="#99ccff" start="2,1" stop="2,-1"/>
       <blockBackground colorName="#99ccff" start="4,1" stop="4,-1"/>
+      <blockBackground colorName="#99ccff" start="0,2" stop="0,-1"/>
+      <blockBackground colorName="#99ccff" start="2,2" stop="2,-1"/>
+      <blockBackground colorName="#99ccff" start="4,2" stop="4,-1"/>
     </blockTableStyle>
     <blockTableStyle id="Table1">
       <blockAlignment value="LEFT"/>
@@ -83,12 +99,14 @@
       <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="6,-1" stop="6,-1"/>
       <blockBackground colorName="#99ccff" start="0,0" stop="0,-1"/>
       <blockBackground colorName="#99ccff" start="1,0" stop="1,-1"/>
       <blockBackground colorName="#99ccff" start="2,0" stop="2,-1"/>
       <blockBackground colorName="#99ccff" start="3,0" stop="3,-1"/>
       <blockBackground colorName="#99ccff" start="4,0" stop="4,-1"/>
       <blockBackground colorName="#99ccff" start="5,0" stop="5,-1"/>
+      <blockBackground colorName="#99ccff" start="6,0" stop="6,-1"/>
     </blockTableStyle>
     <blockTableStyle id="Table7">
       <blockAlignment value="LEFT"/>
@@ -99,12 +117,14 @@
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="4,-1" stop="4,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="6,-1" stop="6,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="4,-1" stop="4,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="6,-1" stop="6,-1"/>
     </blockTableStyle>
     <blockTableStyle id="Table8">
       <blockAlignment value="LEFT"/>
@@ -151,6 +171,11 @@
     <paraStyle name="P11" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="P12" fontName="Helvetica-Bold" fontSize="16.0" leading="20" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="P13" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P14" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P15" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="P16" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P17" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P18" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
     <paraStyle name="Standard" fontName="Helvetica"/>
     <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
     <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
@@ -1138,7 +1163,7 @@ AAAASUVORK5CYII=
       </tr>
       <tr>
         <td>
-          <para style="P3">Shipping Address</para>
+          <para style="P3">Billpping Address</para>
         </td>
         <td>
           <para style="P10">[[ o.partner_id and display_address(o.partner_id) ]]</para>
@@ -1156,11 +1181,39 @@ AAAASUVORK5CYII=
           <para style="P10">[[ (o.payment_term and o.payment_term.name) or '' ]] </para>
         </td>
       </tr>
+      <tr>
+        <td>
+          <para style="P3">Shipping Address</para>
+        </td>
+        <td>
+          <para style="P10">[[ o.partner_id and display_address(o.shipping_address) ]]</para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P6">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P11">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
     </blockTable>
     <para style="terp_default_9">
       <font color="white"> </font>
     </para>
-    <blockTable colWidths="50.0,257.0,53.0,55.0,56.0,64.0" repeatRows="1" style="Table1">
+    <blockTable colWidths="45.0,213.0,46.0,45.0,57.0,64.0,64.0" repeatRows="1" style="Table1">
       <tr>
         <td>
           <para style="terp_tblheader_Details">Product Code</para>
@@ -1175,6 +1228,9 @@ AAAASUVORK5CYII=
           <para style="P5">Total Fq St</para>
         </td>
         <td>
+          <para style="P5">Regular Price</para>
+        </td>
+        <td>
           <para style="terp_tblheader_Details_Right">Price Per Unit</para>
         </td>
         <td>
@@ -1184,7 +1240,7 @@ AAAASUVORK5CYII=
     </blockTable>
     <section>
       <para style="terp_default_8">[[repeatIn(o.invoice_line,'line')]]</para>
-      <blockTable colWidths="48.0,258.0,53.0,56.0,55.0,63.0" style="Table7">
+      <blockTable colWidths="43.0,215.0,44.0,46.0,58.0,62.0,66.0" style="Table7">
         <tr>
           <td>
             <para style="terp_default_Right_9">[[ line.product_id.default_code ]]</para>
@@ -1197,6 +1253,9 @@ AAAASUVORK5CYII=
           </td>
           <td>
             <para style="terp_default_Right_9">[[ formatLang(line.quantity ) ]] </para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">[[ formatLang(line.list_price, digits=get_digits(dp='Account'), currency_obj=o.currency_id) ]]</para>
           </td>
           <td>
             <para style="terp_default_Right_9">[[ formatLang(line.price_unit, digits=get_digits(dp='Account'), currency_obj=o.currency_id) ]]</para>
@@ -1234,10 +1293,15 @@ AAAASUVORK5CYII=
               <font color="white"> </font>
             </para>
           </td>
+          <td>
+            <para style="terp_default_Right_9">
+              <font color="white"> </font>
+            </para>
+          </td>
         </tr>
       </blockTable>
     </section>
-    <blockTable colWidths="394.0,55.0,85.0" style="Table8">
+    <blockTable colWidths="377.0,72.0,85.0" style="Table8">
       <tr>
         <td>
           <para style="terp_default_9">
