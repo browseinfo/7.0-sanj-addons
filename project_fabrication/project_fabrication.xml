@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    <record id="view_account_inv_tax_inherit_flow" model="ir.ui.view">
+        <field name="name">project.project.fabrication</field>
+        <field name="model">project.project</field>
+		<field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+        	<field name="user_id"  position="after">
+                <field name="schedule_delivery_date"/>
+            </field>
+
+            <xpath expr="/form/sheet/notebook//page[@string='Team']" position="after">
+                <page string="Fabrication And Installation">
+                    <group>
+                        <group>
+			                <field name="fabrication"/>
+			                <field name="fabrication_cost" attrs="{'invisible': [('fabrication','=','without_fabrication_labour')]}"/>
+                        </group>
+                        <group>
+			                <field name="installation"/>
+			                <field name="installation_cost" attrs="{'invisible': [('installation','=','without_installation')]}"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+    </data>
+</openerp>

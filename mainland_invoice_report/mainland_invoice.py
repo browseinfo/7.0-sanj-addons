@@ -20,13 +20,34 @@
 ##############################################################################
 
 from openerp.osv import fields, osv
-
+import openerp.addons.decimal_precision as dp
 
 class account_invoice(osv.osv):
+    def _amount_total_commision(self, cr, uid, ids, field_name, arg, context=None):
+        cur_obj = self.pool.get('res.currency')
+        inv_obj = self.pool.get('account.invoice')
+        inv_line_obj = self.pool.get('account.invoice.line')
+        if not ids:
+            return {}
+        tot = {}
+        for inv in self.browse(cr, uid, ids, context=context):
+            tot[inv.id] = {
+            }
+            comm = price = totalcom =  0.0
+            cur = inv.currency_id
+            for line in inv.invoice_line:
+                comm = line.commision
+                price = line.price_unit
+                totalcom += price * comm / 100 # calculate the amount of vat on tip 
+        tot[inv.id]= cur_obj.round(cr, uid, cur, totalcom)
+        return tot
+
     _inherit = 'account.invoice'
     _columns = {
         'date_order':fields.date('Order Date',select=True, help="Date on which this document has been created."),
         'shipping_address': fields.many2one('res.partner', 'Shipping Address'),
+        'total_commision': fields.function(_amount_total_commision, string='Commision', digits_compute= dp.get_precision('Account')), 
+
     }
     _defaults = {
         'date_order': fields.date.context_today,
@@ -35,9 +56,12 @@ class account_invoice(osv.osv):
 account_invoice()
 
 class account_invoice_line(osv.osv):
+
     _inherit = 'account.invoice.line'
     _columns = {
         'list_price': fields.float('Regular Price'),
+        'commision': fields.float('Commision(%)'),
+
     }
     
     def product_id_change(self, cr, uid, ids, product, uom_id, qty=0, name='', type='out_invoice', partner_id=False, fposition_id=False, price_unit=False, currency_id=False, context=None, company_id=None):

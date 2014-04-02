@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	
+        <record id="view_invoice_commision_tree" model="ir.ui.view">
+            <field name="name">account.invoice.commision.tree</field>
+            <field name="model">account.invoice.commision.model</field>
+            <field name="arch" type="xml">
+                <tree string="Commision Analysis" create="false">
+                    <field name="partner_id" invisible="1"/>
+                    <field name="user_id" invisible="1"/>
+                    <field name="total_commision"/>
+                    <field name="price_total"/>
+                    <field name="commision" invisible="1"/>
+	                <field name="month" invisible="1"/>
+	                <field name="date" invisible="1"/>
+	                <field name="year" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+    <record id="view_invoice_commmsion_graph" model="ir.ui.view">
+         <field name="name">account.invoice.commision.model.graph</field>
+         <field name="model">account.invoice.commision.model</field>
+         <field name="arch" type="xml">
+             <graph string="Invoice Commision Analysis" type="bar">
+                 <field name="partner_id"/>
+                 <field name="total_commision"/>
+                 <field name="commision"/>
+             </graph>
+         </field>
+    </record>
+
+    <record id="view_account_invoice_commision_search" model="ir.ui.view">
+        <field name="name">account.invoice.commision.model.search</field>
+        <field name="model">account.invoice.commision.model</field>
+        <field name="arch" type="xml">
+            <search string="Invoice Commision">
+                <field name="month"/>
+                <field name="date"/>
+                <field name="year"/>
+                <field name="partner_id"/>
+                <field name="user_id"/>
+                <group expand="1" string="Group By..." >
+                    <filter name="group_month" string="Month" context="{'group_by':'month'}"/>
+                    <filter name="group_date" string="Date" context="{'group_by':'date'}"/>
+                    <filter name="group_year" string="Year" context="{'group_by':'year'}"/>
+                    <filter name="group_partner" string="Customer" context="{'group_by':'partner_id'}"/>
+                    <filter name="group_sales" string="Salesperson" context="{'group_by':'user_id'}"/>
+                </group>
+
+            </search>
+        </field>
+    </record>
+               
+    <record id="action_invoice_commision_report" model="ir.actions.act_window">
+        <field name="name">Invoice Commision Analysis</field>
+        <field name="res_model">account.invoice.commision.model</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,graph</field>
+        <field name="search_view_id"  ref="view_account_invoice_commision_search"/>
+        <field name="context">{'group_by_no_leaf':1,}</field>
+    </record>
+    <menuitem action="action_invoice_commision_report" id="menu_action_invoice_commision_report" parent="account.menu_finance_reporting" sequence="6"/>
+
+    </data>
+</openerp>

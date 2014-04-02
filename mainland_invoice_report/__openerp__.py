@@ -30,6 +30,7 @@
     'data': [
             'maniland_report.xml',
             'mainland_invoice_view.xml',
+            'invoice_commision_report.xml',
             ],
     'demo': [],
     'test': [],
