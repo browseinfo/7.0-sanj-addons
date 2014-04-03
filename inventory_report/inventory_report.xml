@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report auto="False" 
+				id="stock_inventory_report" 
+				model="stock.inventory" 
+				name="inventory.report"
+                rml="inventory_report/report/inventory_report.rml" 
+				string="Stock Inventory Report"
+                usage="default"/>
+
+    </data>
+</openerp>

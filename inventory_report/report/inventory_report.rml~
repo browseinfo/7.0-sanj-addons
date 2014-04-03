@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="28.0" y1="28.0" width="539" height="800"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+ 	<blockTableStyle id="Table_Background">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="1,-1"/>
+      <blockBackground colorName="#cccccc" start="0,0" stop="-1,-1"/>
+      <blockTextColor colorName="white" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table_Simple">
+      <blockAlignment value="CENTER"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica"/>
+    <paraStyle name="P11" fontName="Helvetica-Bold" fontSize="8.0" leading="10" />
+
+    <paraStyle name="P8" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P88" fontSize="12.0" leading="17" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P17" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P18" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+	<para>[[repeatIn(objects,'o')]]</para>
+    <blockTable colWidths="539.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P8">Mainland Tile And Stone</para>
+          <para style="P88">Inventory Reconciliation</para>
+        </td>
+      </tr>
+    </blockTable>
+	<blockTable colWidths="80.0,300.0,80.0,80.0" style="Table_Background">
+		<tr>
+			<td>
+				<para style="P17">Product Code</para>
+			</td>
+			<td>
+				<para style="P11">Product Title</para>
+			</td>
+			<td>
+				<para style="P17">ERP Count Sq/Ft</para>
+			</td>
+			<td>
+				<para style="P17">Physical Count Sq/Ft</para>
+			</td>
+		</tr>
+	</blockTable>
+ 	<section>
+ 		<para>[[ repeatIn(o.inventory_line_id,'obj_line')]]</para>
+	 	<blockTable colWidths="80.0,300.0,80.0,80.0" style="Table_Simple">
+			<tr>
+				<td>
+					<para style="P1">[[ obj_line.product_id.default_code ]]</para>
+				</td>
+				<td>
+					<para style="P1">[[ obj_line.product_id.name ]]</para>
+				</td>
+				<td>
+					<para style="P18">[[ obj_line.product_qty ]]</para>
+				</td>
+				<td>
+					<para style="P18">[[ obj_line.physical_product_qty ]]</para>
+				</td>
+			</tr>
+		</blockTable>
+	</section>
+
+
+  </story>
+</document>
