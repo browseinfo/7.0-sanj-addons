@@ -7,15 +7,15 @@
 ##############################################################################
 
 {
-    'name':' Stock inventory Report',
+    'name':' Stock Inventory Report',
     'version':'7.0',
     'author':'BrowseInfo',
     'website':'http://www.browseinfo.in',
     'images':[],
     'data': [
-             'stock_inventory_view.xml','inventory_report.xml', 'products_report_view.xml',
+              'products_report_view.xml','report/stock_picking_in_report_view.xml',
             ],
-    'depends':['stock'],
+    'depends':['stock','report_aeroo'],
     'demo': [],
     'test': [],
     'installable': True,

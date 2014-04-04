@@ -6,7 +6,6 @@
 #
 ##############################################################################
 
-import stock_inventory
 import report
 import products_report
 

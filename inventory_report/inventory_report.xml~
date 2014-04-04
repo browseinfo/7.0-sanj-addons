@@ -4,10 +4,10 @@
 
         <report auto="False" 
 				id="stock_inventory_report" 
-				model="stock.inventory" 
+				model="stock.picking.in" 
 				name="inventory.report"
                 rml="inventory_report/report/inventory_report.rml" 
-				string="Stock Inventory Report"
+				string="Stock Inventory Aeroo Report"
                 usage="default"/>
 
     </data>

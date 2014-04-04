@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="stock_picking_in_aeroo_ods" model="ir.actions.report.xml">
+            <field name="name">Inventory Reconciliation Report</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">stock.picking.in</field>
+            <field name="report_name">stock_picking_in_ods</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="parser_loc">inventory_report/report/stock_picking_in_report.py</field>
+            <field name="report_rml">inventory_report/report/stock_picking_in_report.ods</field>
+            <field name="parser_state">loc</field>
+            <field name="tml_source">file</field>
+        </record>
+
+        <record id="stock_picking_in_aeroo_ods_vals" model="ir.values">
+            <field name="name">stock_picking_in_ods_report</field>
+            <field name="model">stock.picking.in</field>
+            <field eval="'client_print_multi'" name="key2"/>
+            <field eval="'ir.actions.report.xml,' +str(stock_picking_in_aeroo_ods)" name="value_unpickle"/>
+        </record>
+        
+        <record id="stock_picking_out_aeroo_ods" model="ir.actions.report.xml">
+            <field name="name">Inventory Reconciliation Report</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">stock.picking.out</field>
+            <field name="report_name">stock_picking_out_ods</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="parser_loc">inventory_report/report/stock_picking_in_report.py</field>
+            <field name="report_rml">inventory_report/report/stock_picking_out_report.ods</field>
+            <field name="parser_state">loc</field>
+            <field name="tml_source">file</field>
+        </record>
+
+        <record id="stock_picking_out_aeroo_ods_vals" model="ir.values">
+            <field name="name">stock_picking_out_ods_report</field>
+            <field name="model">stock.picking.out</field>
+            <field eval="'client_print_multi'" name="key2"/>
+            <field eval="'ir.actions.report.xml,' +str(stock_picking_out_aeroo_ods)" name="value_unpickle"/>
+        </record>
+        
+        <record id="stock_inventory_aeroo_ods" model="ir.actions.report.xml">
+            <field name="name">Inventory Reconciliation Report</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">stock.inventory</field>
+            <field name="report_name">stock_inventory_out_ods</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="parser_loc">inventory_report/report/stock_picking_in_report.py</field>
+            <field name="report_rml">inventory_report/report/stock_inventory_report.ods</field>
+            <field name="parser_state">loc</field>
+            <field name="tml_source">file</field>
+        </record>
+
+        <record id="stock_inventory_aeroo_ods_vals" model="ir.values">
+            <field name="name">stock_inventory_ods_report</field>
+            <field name="model">stock.inventory</field>
+            <field eval="'client_print_multi'" name="key2"/>
+            <field eval="'ir.actions.report.xml,' +str(stock_inventory_aeroo_ods)" name="value_unpickle"/>
+        </record>
+        
+       
+
+      </data>
+</openerp>
