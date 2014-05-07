@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record model="ir.ui.view" id="pos_cost_sale_order_line_form">
+		    <field name="name">pos.order.line.tree.margin.view.form</field>
+		    <field name="model">pos.order</field>
+		    <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+		    <field name="arch" type="xml">
+		    	<xpath expr="//field[@name='lines']/tree[@string='Order lines']" position="attributes">
+		    		<attribute name="editable"/>
+		    	</xpath>
+		    	
+		       <xpath expr="//field[@name='lines']/form//field[@name='discount']" position="before">
+		            <field name="fabrication"/>
+		            <field name="fabrication_cost" attrs="{'invisible': [('fabrication','=','without_fabrication_labour')]}"/>
+		            <field name="installation"/>
+		            <field name="installation_cost" attrs="{'invisible': [('installation','=','without_installation')]}"/>
+		       </xpath>
+		    </field>
+		</record>
+    </data>
+</openerp>

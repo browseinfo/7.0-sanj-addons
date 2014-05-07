@@ -15,7 +15,7 @@
     'data': [
               'products_report_view.xml','report/stock_picking_in_report_view.xml',
             ],
-    'depends':['stock','report_aeroo'],
+    'depends':['stock','report_aeroo','sale'],
     'demo': [],
     'test': [],
     'installable': True,
