@@ -19,22 +19,6 @@
 #
 ##############################################################################
 
-
-{
-    'name': 'POS Fabrication',
-    'version': '1.0',
-    'category': 'POS Fabrication',
-    'description': """
-        This module help to calculate fabrication cost and installation cost of a product in POS.
-    """,
-    'author': 'BrowseInfo',
-    'website': 'http://www.browseinfo.in',
-    'depends': ['point_of_sale'],
-    'data': ['pos_fabrication_view.xml'],
-    'demo': [],
-    'test': [],
-    'installable': True,
-    'auto_install': False,
-}
+import commision
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

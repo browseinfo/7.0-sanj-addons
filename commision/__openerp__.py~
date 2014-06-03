@@ -21,16 +21,16 @@
 
 
 {
-    'name': 'POS Fabrication',
+    'name': 'Commision',
     'version': '1.0',
-    'category': 'POS Fabrication',
-    'description': """
-        This module help to calculate fabrication cost and installation cost of a product in POS.
-    """,
+    'category': 'Sales',
     'author': 'BrowseInfo',
     'website': 'http://www.browseinfo.in',
-    'depends': ['point_of_sale'],
-    'data': ['pos_fabrication_view.xml'],
+    'depends': ['base','account'],
+    'data': [
+        'security/ir.model.access.csv',
+        'commision_view.xml',
+             ],
     'demo': [],
     'test': [],
     'installable': True,

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    <record id="view_commision_form" model="ir.ui.view">
+            <field name="name">commision.form</field>
+            <field name="model">invoice.commision</field>
+            <field name="arch" type="xml">
+            	<form string="Commision Information" version="7.0">
+            			<group cols="4">
+            				<group>
+            					<field name="commision"/>
+            					<field name="user_id"/>
+        					</group>
+        					<group>
+        					</group>
+            			</group>
+    			</form>
+			</field>
+	</record>
+
+
+	<record id="view_commision_tree" model="ir.ui.view">
+		<field name="name">commision.tree</field>
+		<field name="model">invoice.commision</field>
+		<field name="arch" type="xml">
+			<tree string="Commision Information">
+				<field name="commision"/>
+				<field name="user_id"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="action_commision_form" model="ir.actions.act_window">
+		<field name="name">Commision</field>
+		<field name="res_model">invoice.commision</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+    <menuitem id="menu_commision" 
+			name="Commision" 
+			parent="account.menu_finance_configuration"
+			sequence="44"/>
+
+	<menuitem action="action_commision_form"
+            id="menu_action_commision"
+            parent="menu_commision"/>
+            
+    </data>
+</openerp>

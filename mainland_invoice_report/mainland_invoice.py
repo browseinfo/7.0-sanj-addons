@@ -56,12 +56,26 @@ class account_invoice(osv.osv):
 account_invoice()
 
 class account_invoice_line(osv.osv):
-
     _inherit = 'account.invoice.line'
+    
+    def _get_commision(self, cr, uid, context=None):
+        if context is None:
+            context = {}
+        val = 0.0
+        res_user_id = self.pool.get('invoice.commision').search(cr, uid, [('user_id', '=', uid)], context=context)
+        if res_user_id:
+            commision_browse = self.pool.get('invoice.commision').browse(cr, uid, res_user_id, context=context)[0]
+            val = commision_browse.commision
+        return val  
+           
     _columns = {
         'list_price': fields.float('Regular Price'),
         'commision': fields.float('Commision(%)'),
 
+    }
+    
+    _defaults = {
+        'commision': _get_commision,
     }
     
     def product_id_change(self, cr, uid, ids, product, uom_id, qty=0, name='', type='out_invoice', partner_id=False, fposition_id=False, price_unit=False, currency_id=False, context=None, company_id=None):

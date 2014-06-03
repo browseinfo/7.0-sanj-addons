@@ -19,22 +19,19 @@
 #
 ##############################################################################
 
+from openerp.tools import DEFAULT_SERVER_DATE_FORMAT, DEFAULT_SERVER_DATETIME_FORMAT, DATETIME_FORMATS_MAP
+from datetime import datetime, date
+import time
+from openerp.osv import osv, fields
+from openerp.tools.translate import _
+from openerp import netsvc
 
-{
-    'name': 'POS Fabrication',
-    'version': '1.0',
-    'category': 'POS Fabrication',
-    'description': """
-        This module help to calculate fabrication cost and installation cost of a product in POS.
-    """,
-    'author': 'BrowseInfo',
-    'website': 'http://www.browseinfo.in',
-    'depends': ['point_of_sale'],
-    'data': ['pos_fabrication_view.xml'],
-    'demo': [],
-    'test': [],
-    'installable': True,
-    'auto_install': False,
-}
+class invoice_commision(osv.Model):
+    _name = 'invoice.commision'
+
+    _columns = {
+        'commision': fields.float('Commision', required=True),
+        'user_id': fields.many2one('res.users', 'User', required=True),
+    }
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
