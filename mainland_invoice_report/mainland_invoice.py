@@ -33,7 +33,6 @@ class account_invoice(osv.osv):
         for loop in commision_obj.browse(cr ,uid, user_id, context=context):
             commision = loop.commision
 #        commision = commision_obj.browse(cr ,uid, user_id, context=context)[0].commision
-        print"\n\ncommision",commision
         if not ids:
             return {}
         tot = {}
