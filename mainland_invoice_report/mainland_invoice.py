@@ -29,7 +29,7 @@ class account_invoice(osv.osv):
         inv_line_obj = self.pool.get('account.invoice.line')
         commision_obj = self.pool.get('invoice.commision')
         user_id = commision_obj.search(cr ,uid, [('user_id','=',uid)], context=context)
-        print"\n\nuser_id",user_id
+        commision = 0
         for loop in commision_obj.browse(cr ,uid, user_id, context=context):
             commision = loop.commision
 #        commision = commision_obj.browse(cr ,uid, user_id, context=context)[0].commision
