@@ -27,7 +27,7 @@ class project_project(osv.osv):
     _inherit = 'project.project'
     
     _columns = {
-        'schedule_delivery_date': fields.date('Schedule Delivery Date'),
+        'schedule_delivery_date': fields.date('Installation Date'),
         'fabrication': fields.selection([('without_fabrication_labour', 'Without Fabrication Labour'), ('with_fabrication_labour', 'With Fabrication Labour')], 'Fabrication'),
         'fabrication_cost': fields.float('Fabrication Cost'),
         'installation': fields.selection([('without_installation', 'Without Installation'), ('with_installation', 'With Installation')], 'Installation'),

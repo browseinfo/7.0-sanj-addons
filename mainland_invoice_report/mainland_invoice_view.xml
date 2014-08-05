@@ -20,7 +20,7 @@
              	 	<field name="list_price"/>
              	 </xpath>
            		 <xpath expr="//page[@string='Invoice Lines']/field[@name='invoice_line']/tree[@string='Invoice Lines']/field[@name='price_unit']" position="before">
-             	 	<field name="commision"/>
+             	 	<field name="commision" invisible="1"/>
              	 </xpath>
              	 <field name="partner_id" position="after">
              	 	<field name="shipping_address" context="{'search_default_customer':1, 'show_address': 1}"/>

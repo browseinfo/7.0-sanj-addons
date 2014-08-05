@@ -27,18 +27,22 @@ class account_invoice(osv.osv):
         cur_obj = self.pool.get('res.currency')
         inv_obj = self.pool.get('account.invoice')
         inv_line_obj = self.pool.get('account.invoice.line')
+        commision_obj = self.pool.get('invoice.commision')
+        user_id = commision_obj.search(cr ,uid, [('user_id','=',uid)], context=context)
+        commision = commision_obj.browse(cr ,uid, user_id[0], context=context).commision
         if not ids:
             return {}
         tot = {}
         for inv in self.browse(cr, uid, ids, context=context):
             tot[inv.id] = {
             }
-            comm = price = totalcom =  0.0
+            sale = buy = totalcom =  0.0
             cur = inv.currency_id
             for line in inv.invoice_line:
-                comm = line.commision
-                price = line.price_unit
-                totalcom += price * comm / 100 # calculate the amount of vat on tip 
+                sale = line.price_unit * line.quantity
+                buy = line.product_id.standard_price * line.quantity
+                margin = sale - buy
+                totalcom += margin * commision / 100 # calculate the amount of vat on tip 
         tot[inv.id]= cur_obj.round(cr, uid, cur, totalcom)
         return tot
 

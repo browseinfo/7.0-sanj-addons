@@ -7,14 +7,13 @@
             <field name="model">invoice.commision</field>
             <field name="arch" type="xml">
             	<form string="Commision Information" version="7.0">
-            			<group cols="4">
-            				<group>
-            					<field name="commision"/>
-            					<field name="user_id"/>
-        					</group>
-        					<group>
-        					</group>
-            			</group>
+					<group>
+						<label for="commision" />
+						<div name="commision">
+							<field name="commision" class="oe_inline"/> %%
+						</div>
+						<field name="user_id" class="oe_inline"/>
+					</group>
     			</form>
 			</field>
 	</record>
